@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Task Manager</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<style>
-    /* body{
-    font-family:Arial;
-    margin:30px;
-} */
-</style>
-<h1>Student Task Manager</h1>
 
-<input type="text" id="task">
+<div class="container">
 
-<button onclick="addTask()">
-Add Task
-</button>
+    <h1>📋 Student To-Do Manager</h1>
 
-<ul id="taskList"></ul>
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
 
 <script src="script.js"></script>
 

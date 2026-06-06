@@ -2,3 +2,121 @@ body{
     font-family:Arial;
     margin:30px;
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+
+    animation:fadeIn 1s ease;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#667eea;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#4d63d4;
+}
+
+ul{
+    margin-top:20px;
+}
+
+li{
+    list-style:none;
+    margin-bottom:10px;
+    background:#f4f4f4;
+    padding:12px;
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    animation:slideIn 0.4s ease;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+    opacity:0.7;
+}
+
+.task-buttons button{
+    margin-left:5px;
+}
+
+.complete-btn{
+    background:#2ecc71;
+}
+
+.delete-btn{
+    background:#e74c3c;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
